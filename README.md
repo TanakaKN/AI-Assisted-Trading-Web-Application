@@ -41,4 +41,46 @@ An AI-powered trading assistant built with **Python, Django, and Neural Networks
 ---
 
 ## 📁 Project Structure
+ai_trading_app/
+│
+├── config/ # Django project settings
+├── trading_ai/ # Core application
+│ ├── services/ # AI logic (data, model, risk, decision)
+│ ├── views.py
+│ └── urls.py
+│
+├── templates/ # HTML templates
+│ └── index.html
+│
+├── static/ # Static assets
+│ ├── css/style.css
+│ └── js/app.js
+│
+├── manage.py
+└── venv/
 
+⚠️ Important Disclaimer
+
+This application is for educational and research purposes only.
+It is not financial advice and should not be used for live trading without proper validation, risk management and regulatory compliance.
+
+Markets are unpredictable, and past performance does not guarantee future results.
+
+🧩 Limitations & Future Improvements
+Currently trains models in-memory (can be persisted to disk)
+Single time resolution (daily data)
+No portfolio-level analysis yet
+Planned enhancements:
+Date range selection
+Confidence & risk visualization
+Model persistence (disk / Redis)
+User accounts & analysis history
+Deployment to cloud (PythonAnywhere / VPS)
+
+🤝 Contributing
+Pull requests and suggestions are welcome.
+Feel free to fork the project and experiment with improvements.
+
+📬 Contact
+Built by Tanaka Keith Ndopo
+If you’re interested in collaboration, research, or extensions feel free to reach out.
