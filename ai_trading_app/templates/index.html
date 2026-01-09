@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Trading Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<h1>AI Assisted Trading App</h1>
+
+<form id="trade-form">
+    <label for="ticker">Select Stock:</label><br><br>
+
+    <select id="ticker" required>
+        {% for stock in stocks %}
+            <option value="{{ stock }}">{{ stock }}</option>
+        {% endfor %}
+    </select>
+
+    <br><br>
+    <button id="analyze-btn" type="submit">Analyze</button>
+</form>
+
+<!-- HIDDEN BY DEFAULT -->
+<div id="loading" class="hidden">
+    <div class="spinner"></div>
+    <p id="status-text">Analyzing… this may take a minute on first run.</p>
+</div>
+
+<div id="result"></div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>
